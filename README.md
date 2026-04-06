@@ -7,11 +7,7 @@
 
 ## GitHub Pages Link
 
-[Live Demo](https://yourusername.github.io/your-repo-name) (Replace with actual link after publishing)
-
-## Screenshot
-
-Path: `screenshot.png`
+[Live Demo](https://javabronco.github.io/KenDouglas-hw9-mw-comp484/)
 
 ## Reflection
 
