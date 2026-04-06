@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a3d2e 0%, #1a5a4a 100%);
+    color: #e8e8e8;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #4ff0e3;
+    text-shadow: 2px 2px 8px rgba(79, 240, 227, 0.5);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #00d4aa;
+    border-left: 5px solid #00d4aa;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section {
+    background: linear-gradient(135deg, #0f3460 0%, #1a5a4a 100%);
+    border: 2px solid #00d4aa;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(79, 240, 227, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(79, 240, 227, 0.3);
+}
+
+p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    color: #e8e8e8;
+}
+
+#dateOutput {
+    font-weight: bold;
+    color: #4ff0e3;
+    font-size: 1.3em;
+    background: rgba(79, 240, 227, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4ff0e3;
+}
+
+#numberConversionOutput, #mathOutput {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #00d4aa;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #e8e8e8;
+}
+
+#numberConversionOutput br, #mathOutput br {
+    content: '';
+    display: block;
+    margin: 10px 0;
+}
+
+/* Card-like styling for visual appeal */
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(79, 240, 227, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.section:hover::before {
+    left: 100%;
+}
